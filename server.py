@@ -54,5 +54,6 @@ class Game:
     def dispense(self):
         for client in self.clients:
             self.send(client[0], str(self.d.request(client)))
+            №ылдводлывао
 
 game = Game()
