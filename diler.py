@@ -42,7 +42,7 @@ class Diler:
             self.status = Diler.Client.NotReady()
             self.bet = 0
             self.money = 1000
-            self.pass = False
+            self.pas = False
 
         def __eq__(self, other):
             return self.id == other.id
@@ -51,7 +51,7 @@ class Diler:
             self.cards.append(card)
 
         def ready(self, max_bet):
-            return self.money == 0 or self.bet >= max_bet or self.pass
+            return self.money == 0 or self.bet >= max_bet or self.pas
 
     def __init__(self, server):
         self.server = server
